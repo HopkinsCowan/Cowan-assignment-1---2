@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src = "calc.js"></script>
+    <title>Document</title>
+    <style>
+        body {
+          background-color: rgb(36, 60, 61);
+          font-size: 40px;
+          size: 100px;
+          text-align: center;
+          text-size-adjust: 50px;
+          color: white;
+          
+        }
+        
+        h1 {
+          color: white;
+          text-align: center;
+        }
+        
+        p {
+          font-family: verdana;
+          font-size: 20px;
+          
+        }
+
+        
+       .main input[type="text"]{
+
+        background-color: rgb(115, 123, 126);
+        width:600px;
+        height:50px;
+        font-size: 60px;
+
+        }
+        button{
+
+            size: 100px;
+            width:100px;
+        height:50px;
+        }
+        
+        </style>
+</head>
+
+<body>
+
+    <div class = "main">
+
+    <h1>Calculator</h1>
+    
+
+  <label>First Number:</label><br><br>
+  <input type="text" id="fnum" name="fnum"><br><br>
+  <label>Second Number:</label><br><br>
+  <input type="text" id="snum" name="snum"><br><br>
+  
+
+  <button id ="add" onclick="add()" class = "btn btn-primary"> + </button>
+  <button id ="min" onclick="sub()" class = "btn btn-primary"> - </button>
+  <button id ="mul" onclick="mul()" class = "btn btn-primary"> * </button>
+  <button id ="div" onclick="div()" class = "btn btn-primary"> / </button>
+  <br><br><label id = "answer"> 0 </label>
+
+
+</div>
+
+
+</body>
+</html>
